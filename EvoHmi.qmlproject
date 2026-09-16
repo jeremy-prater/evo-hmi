@@ -1,0 +1,32 @@
+import QmlProject
+
+Project {
+    mainFile: "qml/Main.qml"
+    qt6Project: true
+    qdsVersion: "4.8"
+    widgetApp: false
+
+    QmlFiles {
+        directory: "qml"
+    }
+
+    JavaScriptFiles {
+        directory: "qml"
+    }
+
+    ImageFiles {
+        directory: "qml"
+    }
+
+    Files {
+        filter: "qmldir"
+        directory: "qml"
+    }
+
+    Files {
+        filter: "*.otf;*.ttf"
+        directory: "qml"
+    }
+
+    importPaths: [ "qml" ]
+}

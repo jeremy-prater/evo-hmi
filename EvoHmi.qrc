@@ -1,0 +1,14 @@
+<RCC>
+    <qresource>
+        <file>EvoHmi.qmlproject</file>
+        <file>qml/Dashboard.qml</file>
+        <file>qml/Engine.qml</file>
+        <file>qml/Main.qml</file>
+        <file>qml/Map.qml</file>
+        <file>qml/Media.qml</file>
+        <file>qml/Settings.qml</file>
+        <file>qml/Splash.qml</file>
+        <file>qml/StatusBar.qml</file>
+        <file>qml/Theme.qml</file>
+    </qresource>
+</RCC>

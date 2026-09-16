@@ -1,0 +1,6 @@
+/build/
+/.qt/
+*.user
+*.qmlproject.user
+*.qmlproject.qtds
+CMakeUserPresets.json
