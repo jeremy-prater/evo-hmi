@@ -8,7 +8,7 @@ Screens: engine gauges, OSM navigation, A2DP media, settings.
 
 ## Build
 
-Needs Qt 6.5+ (`Core`, `Gui`, `Qml`, `Quick`, `Network`). Optional: `DBus` (BlueZ on Linux), libosmscout (offline vector maps).
+Needs Qt 6.5+ (`Core`, `Gui`, `Qml`, `Quick`, `Network`). Optional: `DBus` (BlueZ on Linux), libosmscout (map paint + search), Valhalla (routing tiles).
 
 ```bash
 cmake -S evo-hmi -B evo-hmi/build -DCMAKE_BUILD_TYPE=Release \
@@ -44,7 +44,7 @@ On Linux with a desktop session it uses xcb/wayland. On the i.MX6 with no `DISPL
 | `--fake-gps` | Ignore gpsd, crawl a simulated fix |
 | `--fake-bt` | Simulated pairing + now-playing |
 | `--gpsd-host` / `--gpsd-port` | Default `127.0.0.1:2947` |
-| `--map-dir` | libosmscout database directory |
+| `--map-dir` | libosmscout database directory (paint + search) |
 
 Without `--fake-gps`, the app connects to gpsd JSON (`?WATCH`) and falls back to simulation if the daemon is down.
 
